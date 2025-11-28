@@ -157,11 +157,6 @@ Our core insight behind DMDR is that Reinforcement Learning (RL) and Distributio
 
 - [Cache-DiT](https://github.com/vipshop/cache-dit) offers inference acceleration support for Z-Image with DBCache, Context Parallelism and Tensor Parallelism. Visit their [example](https://github.com/vipshop/cache-dit/blob/main/examples/parallelism/run_zimage_cp.py) for more details.
 
-|Baseline L20x1| Ulysses 2 + compile | Ulysses 2 + DBCache F8B1 + compile| 
-|:---:|:---:|:---:|
-|6.71s|3.50s|2.84s|
-|<img width="1024" height="1024" alt="zimage C1_Q0_NONE" src="https://github.com/user-attachments/assets/312ae538-6f1c-4e4b-b757-6cbbc12ad5b9" />|<img width="1024" height="1024" alt="zimage C1_Q0_NONE_Ulysses2" src="https://github.com/user-attachments/assets/6ce4c200-2548-471d-aa5e-c0e79cef71e2" />|<img width="1024" height="1024" alt="zimage C1_Q0_DBCache_F8B1_W4I1M0MC0_R0 5_T0O0_Ulysses2_S3" src="https://github.com/user-attachments/assets/17570c5c-8f44-4097-9d5e-7c6be387275b" />|
-
 
 ## 📜 Citation
 
