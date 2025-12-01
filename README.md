@@ -9,7 +9,7 @@
 [![ModelScope Space](https://img.shields.io/badge/🤖%20Online_Demo-Z--Image--Turbo-17c7a7)](https://www.modelscope.cn/aigc/imageGeneration?tab=advanced&versionId=469191&modelType=Checkpoint&sdVersion=Z_IMAGE_TURBO&modelUrl=modelscope%253A%252F%252FTongyi-MAI%252FZ-Image-Turbo%253Frevision%253Dmaster%7D%7BOnline)&#160;
 [![Art Gallery PDF](https://img.shields.io/badge/%F0%9F%96%BC%20Art_Gallery-PDF-ff69b4)](assets/Z-Image-Gallery.pdf)&#160;
 [![Web Art Gallery](https://img.shields.io/badge/%F0%9F%8C%90%20Web_Art_Gallery-online-00bfff)](https://modelscope.cn/studios/Tongyi-MAI/Z-Image-Gallery/summary)&#160;
-<a href="http://github.com/Tongyi-MAI/Z-Image/blob/main/Z_Image_Report.pdf" target="_blank"><img src="https://img.shields.io/badge/Report-b5212f.svg?logo=arxiv" height="21px"></a>
+<a href="https://arxiv.org/abs/2511.22699" target="_blank"><img src="https://img.shields.io/badge/Report-b5212f.svg?logo=arxiv" height="21px"></a>
 
 
 Welcome to the official repository for the Z-Image（造相）project!
@@ -127,7 +127,7 @@ image.save("example.png")
 
 ## 🔬 Decoupled-DMD: The Acceleration Magic Behind Z-Image
 
-[![arXiv](https://img.shields.io/badge/Paper-b5212f.svg?logo=arxiv)](http://github.com/Tongyi-MAI/Z-Image/blob/main/Decoupled_DMD.pdf)
+[![arXiv](https://img.shields.io/badge/Paper-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2511.22677)
 
 Decoupled-DMD is the core few-step distillation algorithm that empowers the 8-step Z-Image model.
 
