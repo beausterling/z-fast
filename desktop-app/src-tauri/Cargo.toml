@@ -1,0 +1,26 @@
+[package]
+name = "z-image-desktop"
+version = "1.0.0"
+description = "Ultra-fast local AI image generation"
+authors = ["Z-Image Team"]
+license = ""
+repository = ""
+edition = "2021"
+
+# Optimize for speed and small binary size
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[build-dependencies]
+tauri-build = { version = "1.5.1", features = [] }
+
+[dependencies]
+tauri = { version = "1.6.1", features = ["shell-open", "shell-execute", "shell-sidecar", "http-request", "protocol-asset", "window-close", "window-hide", "window-show", "window-maximize", "window-minimize", "window-unmaximize", "window-unminimize", "window-start-dragging"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.36", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }

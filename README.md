@@ -1,182 +1,289 @@
-<h1 align="center">⚡️- Image<br><sub><sup>An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer</sup></sub></h1>
+<h1 align="center">⚡️ Z-Image<br><sub><sup>Ultra-Fast Local AI Image Generation</sup></sub></h1>
 
 <div align="center">
 
-[![Official Site](https://img.shields.io/badge/Official%20Site-333399.svg?logo=homepage)](https://tongyi-mai.github.io/Z-Image-blog/)&#160;
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-Z--Image--Turbo-yellow)](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)&#160;
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Online_Demo-Z--Image--Turbo-blue)](https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo)&#160;
-[![ModelScope Model](https://img.shields.io/badge/🤖%20Checkpoint-Z--Image--Turbo-624aff)](https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo)&#160;
-[![ModelScope Space](https://img.shields.io/badge/🤖%20Online_Demo-Z--Image--Turbo-17c7a7)](https://www.modelscope.cn/aigc/imageGeneration?tab=advanced&versionId=469191&modelType=Checkpoint&sdVersion=Z_IMAGE_TURBO&modelUrl=modelscope%253A%252F%252FTongyi-MAI%252FZ-Image-Turbo%253Frevision%253Dmaster%7D%7BOnline)&#160;
-[![Art Gallery PDF](https://img.shields.io/badge/%F0%9F%96%BC%20Art_Gallery-PDF-ff69b4)](assets/Z-Image-Gallery.pdf)&#160;
-[![Web Art Gallery](https://img.shields.io/badge/%F0%9F%8C%90%20Web_Art_Gallery-online-00bfff)](https://modelscope.cn/studios/Tongyi-MAI/Z-Image-Gallery/summary)&#160;
-<a href="https://arxiv.org/abs/2511.22699" target="_blank"><img src="https://img.shields.io/badge/Report-b5212f.svg?logo=arxiv" height="21px"></a>
+[![Official Site](https://img.shields.io/badge/Official%20Site-333399.svg?logo=homepage)](https://tongyi-mai.github.io/Z-Image-blog/)
+[![Desktop App](https://img.shields.io/badge/Desktop%20App-Download-00FF00)](./desktop-app)
+[![Landing Page](https://img.shields.io/badge/Landing%20Page-Live-FFFF00)](./landing-page)
+[![Web App](https://img.shields.io/badge/Web%20App-Deploy-00FFFF)](./web-app)
 
+**Fast. Private. Free. Open Source.**
 
-Welcome to the official repository for the Z-Image（造相）project!
+This repository contains three ways to use Z-Image-Turbo:
+1. 🖥️ **Desktop App** - Native macOS/Windows/Linux app (Tauri)
+2. 🌐 **Web App** - Browser-based interface (React + FastAPI)
+3. 🎨 **Landing Page** - Marketing site for the desktop app
 
 </div>
 
+---
 
+## 🚀 Quick Links
 
-## ✨ Z-Image
+### For End Users
+- **[Desktop App →](./desktop-app)** - Download and run locally (recommended)
+- **[Landing Page →](./landing-page)** - Learn more about Z-Image
 
-Z-Image is a powerful and highly efficient image generation model with **6B** parameters. Currently there are three variants:
+### For Developers
+- **[Web App →](./web-app)** - Deploy your own web version
+- **[Original Z-Image Docs](#-original-z-image-documentation)** - Model information
 
-- 🚀 **Z-Image-Turbo** – A distilled version of Z-Image that matches or exceeds leading competitors with only **8 NFEs** (Number of Function Evaluations). It offers **⚡️sub-second inference latency⚡️** on enterprise-grade H800 GPUs and fits comfortably within **16G VRAM consumer devices**. It excels in photorealistic image generation, bilingual text rendering (English & Chinese), and robust instruction adherence.
+---
 
-- 🧱 **Z-Image-Base** – The non-distilled foundation model. By releasing this checkpoint, we aim to unlock the full potential for community-driven fine-tuning and custom development.
+## 🖥️ Desktop App (Recommended)
 
-- ✍️ **Z-Image-Edit** – A variant fine-tuned on Z-Image specifically for image editing tasks. It supports creative image-to-image generation with impressive instruction-following capabilities, allowing for precise edits based on natural language prompts.
+<div align="center">
 
-### 📥 Model Zoo
+### ⚡ SUB-SECOND • 🔒 100% PRIVATE • 💰 FREE FOREVER
 
-| Model | Hugging Face                                                                                                                                                                                                                                                                                                              | ModelScope                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :--- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Z-Image-Turbo** | [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint%20-Z--Image--Turbo-yellow)](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) <br> [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Online%20Demo-Z--Image--Turbo-blue)](https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo) | [![ModelScope Model](https://img.shields.io/badge/🤖%20%20Checkpoint-Z--Image--Turbo-624aff)](https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo) <br> [![ModelScope Space](https://img.shields.io/badge/%F0%9F%A4%96%20Online%20Demo-Z--Image--Turbo-17c7a7)](https://www.modelscope.cn/aigc/imageGeneration?tab=advanced&versionId=469191&modelType=Checkpoint&sdVersion=Z_IMAGE_TURBO&modelUrl=modelscope%3A%2F%2FTongyi-MAI%2FZ-Image-Turbo%3Frevision%3Dmaster) |
-| **Z-Image-Base** | *To be released*                                                                                                                                                                                                                                                                                                          | *To be released*                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Z-Image-Edit** | *To be released*                                                                                                                                                                                                                                                                                                          | *To be released*                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+</div>
 
-### 🖼️ Showcase
+**Native desktop application for macOS, Windows, and Linux.**
 
-📸 **Photorealistic Quality**: **Z-Image-Turbo** delivers strong photorealistic image generation while maintaining excellent aesthetic quality.
+### Features
+- ⚡ **Blazing fast** - Generate 1024x1024 images in <1 second
+- 🔒 **Completely private** - All processing local, no cloud
+- 🍎 **Mac optimized** - Native Apple Silicon support with Metal
+- 🎨 **Professional quality** - 6B parameter Z-Image-Turbo model
+- 📦 **Self-contained** - Tauri desktop app with embedded Python backend
 
-![Showcase of Z-Image on Photo-realistic image Generation](assets/showcase_realistic.png)
-
-📖 **Accurate Bilingual Text Rendering**: **Z-Image-Turbo** excels at accurately rendering complex Chinese and English text.
-
-![Showcase of Z-Image on Bilingual Text Rendering](assets/showcase_rendering.png)
-
-💡  **Prompt Enhancing & Reasoning**: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to transcend surface-level descriptions and tap into underlying world knowledge.
-
-![reasoning.jpg](assets/reasoning.png)
-
-🧠 **Creative Image Editing**: **Z-Image-Edit** shows a strong understanding of bilingual editing instructions, enabling imaginative and flexible image transformations.
-
-![Showcase of Z-Image-Edit on Image Editing](assets/showcase_editing.png)
-
-### 🏗️ Model Architecture
-We adopt a **Scalable Single-Stream DiT** (S3-DiT) architecture. In this setup, text, visual semantic tokens, and image VAE tokens are concatenated at the sequence level to serve as a unified input stream, maximizing parameter efficiency compared to dual-stream approaches.
-
-![Architecture of Z-Image and Z-Image-Edit](assets/architecture.webp)
-
-### 📈 Performance
-According to the Elo-based Human Preference Evaluation (on [*Alibaba AI Arena*](https://aiarena.alibaba-inc.com/corpora/arena/leaderboard?arenaType=T2I)), Z-Image-Turbo shows highly competitive performance against other leading models, while achieving state-of-the-art results among open-source models.
-
-<p align="center">
-  <a href="https://aiarena.alibaba-inc.com/corpora/arena/leaderboard?arenaType=T2I">
-    <img src="assets/leaderboard.png" alt="Z-Image Elo Rating on AI Arena"/><br />
-    <span style="font-size:1.05em; cursor:pointer; text-decoration:underline;"> Click to view the full leaderboard</span>
-  </a>
-</p>
-
-### 🚀 Quick Start
-Install the latest version of diffusers, use the following command:
-<details>
-  <summary>Click here for details for why you need to install diffusers from source</summary>
-
-  We have submitted two pull requests ([#12703](https://github.com/huggingface/diffusers/pull/12703) and [#12715](https://github.com/huggingface/diffusers/pull/12704)) to the 🤗 diffusers repository to add support for Z-Image. Both PRs have been merged into the latest official diffusers release.
-  Therefore, you need to install diffusers from source for the latest features and Z-Image support.
-
-</details>
+### Quick Start
 
 ```bash
-pip install git+https://github.com/huggingface/diffusers
+cd desktop-app
+npm install
+npm run tauri:dev
 ```
 
-Then, try the following code to generate an image:
+**[Full Desktop App Documentation →](./desktop-app/README.md)**
+
+---
+
+## 🌐 Web App
+
+**Browser-based interface with cloud deployment options.**
+
+### Features
+- 🎨 Neo-brutalist design
+- ⚡ Optimized for speed
+- 📱 Responsive (mobile, tablet, desktop)
+- 🚀 Easy deployment (Netlify, Vercel, etc.)
+
+### Quick Start
+
+**Backend:**
+```bash
+cd web-app/backend
+pip install -r requirements.txt
+python main.py
+```
+
+**Frontend:**
+```bash
+cd web-app/frontend
+npm install
+npm run dev
+```
+
+**[Full Web App Documentation →](./web-app/README.md)**
+
+**[Deployment Guide →](./web-app/DEPLOYMENT.md)**
+
+---
+
+## 🎨 Landing Page
+
+**High-converting marketing page for the desktop app.**
+
+Bold neo-brutalist design that emphasizes speed, privacy, and zero cost.
+
+### Quick Start
+
+```bash
+cd landing-page
+npm install
+npm run dev
+```
+
+### Deploy to Netlify
+
+1. Push to GitHub
+2. Connect to Netlify
+3. Configure: Base directory: `landing-page`, Build: `npm run build`, Publish: `landing-page/dist`
+
+**[Landing Page Documentation →](./landing-page/README.md)**
+
+---
+
+## 📊 Comparison
+
+| Feature | Desktop App | Web App | Original Python |
+|---------|-------------|---------|-----------------|
+| **Speed** | ⚡⚡⚡ Sub-second | ⚡⚡ Fast | ⚡⚡⚡ Fast |
+| **Privacy** | 🔒 100% Local | ☁️ Depends on deployment | 🔒 100% Local |
+| **Ease of Use** | 📦 Install & run | 🌐 Access from browser | 💻 CLI |
+| **UI** | 🎨 Native app | 🎨 Web interface | ❌ None |
+| **Platform** | macOS/Windows/Linux | Any with browser | Any with Python |
+| **Best For** | Personal use | Sharing with others | Development |
+
+---
+
+## 🎯 Which One to Use?
+
+### Use Desktop App if you want:
+- ✅ Maximum speed and privacy
+- ✅ No server setup/hosting
+- ✅ Native app experience
+- ✅ Offline usage after model download
+
+### Use Web App if you want:
+- ✅ Share with others (deploy to cloud)
+- ✅ No local installation required
+- ✅ Access from any device
+- ✅ Custom branding/styling
+
+### Use Original Python if you want:
+- ✅ Integrate into your own code
+- ✅ Batch processing
+- ✅ Custom workflows
+- ✅ Maximum control
+
+---
+
+## ⚡️ Original Z-Image Documentation
+
+Z-Image is a powerful and highly efficient image generation model with **6B** parameters.
+
+### Model Variants
+
+- 🚀 **Z-Image-Turbo** – A distilled version that matches or exceeds leading competitors with only **8 NFEs** (Number of Function Evaluations). It offers **⚡️sub-second inference latency⚡️** on enterprise-grade H800 GPUs and fits comfortably within **16G VRAM consumer devices**.
+
+- 🧱 **Z-Image-Base** – The non-distilled foundation model (coming soon)
+
+- ✍️ **Z-Image-Edit** – Fine-tuned for image editing tasks (coming soon)
+
+### Model Zoo
+
+| Model | Hugging Face | ModelScope |
+| :--- | :--- | :--- |
+| **Z-Image-Turbo** | [![HF](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-Z--Image--Turbo-yellow)](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) | [![MS](https://img.shields.io/badge/🤖%20Checkpoint-Z--Image--Turbo-624aff)](https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo) |
+
+### Original Quick Start
+
 ```python
 import torch
 from diffusers import ZImagePipeline
 
-# 1. Load the pipeline
-# Use bfloat16 for optimal performance on supported GPUs
 pipe = ZImagePipeline.from_pretrained(
     "Tongyi-MAI/Z-Image-Turbo",
     torch_dtype=torch.bfloat16,
-    low_cpu_mem_usage=False,
 )
-pipe.to("cuda")
+pipe.to("cuda")  # or "mps" for Mac, "cpu" for CPU
 
-# [Optional] Attention Backend
-# Diffusers uses SDPA by default. Switch to Flash Attention for better efficiency if supported:
-# pipe.transformer.set_attention_backend("flash")    # Enable Flash-Attention-2
-# pipe.transformer.set_attention_backend("_flash_3") # Enable Flash-Attention-3
-
-# [Optional] Model Compilation
-# Compiling the DiT model accelerates inference, but the first run will take longer to compile.
-# pipe.transformer.compile()
-
-# [Optional] CPU Offloading
-# Enable CPU offloading for memory-constrained devices.
-# pipe.enable_model_cpu_offload()
-
-prompt = "Young Chinese woman in red Hanfu, intricate embroidery. Impeccable makeup, red floral forehead pattern. Elaborate high bun, golden phoenix headdress, red flowers, beads. Holds round folding fan with lady, trees, bird. Neon lightning-bolt lamp (⚡️), bright yellow glow, above extended left palm. Soft-lit outdoor night background, silhouetted tiered pagoda (西安大雁塔), blurred colorful distant lights."
-
-# 2. Generate Image
 image = pipe(
-    prompt=prompt,
+    prompt="Your prompt here",
     height=1024,
     width=1024,
-    num_inference_steps=9,  # This actually results in 8 DiT forwards
-    guidance_scale=0.0,     # Guidance should be 0 for the Turbo models
-    generator=torch.Generator("cuda").manual_seed(42),
+    num_inference_steps=9,
+    guidance_scale=0.0,
 ).images[0]
 
-image.save("example.png")
+image.save("output.png")
 ```
 
-## 🔬 Decoupled-DMD: The Acceleration Magic Behind Z-Image
+### Key Papers
 
-[![arXiv](https://img.shields.io/badge/Paper-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2511.22677)
+- **Z-Image**: [![arXiv](https://img.shields.io/badge/Paper-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2511.22699)
+- **Decoupled-DMD**: [![arXiv](https://img.shields.io/badge/Paper-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2511.22677)
+- **DMDR**: [![arXiv](https://img.shields.io/badge/arXiv-2511.13649-b31b1b.svg)](https://arxiv.org/abs/2511.13649)
 
-Decoupled-DMD is the core few-step distillation algorithm that empowers the 8-step Z-Image model.
+### Community Works
 
-Our core insight in Decoupled-DMD  is that the success of existing DMD (Distributaion Matching Distillation) methods is the result of two independent, collaborating mechanisms:
+- [Cache-DiT](https://github.com/vipshop/cache-dit) - Inference acceleration with DBCache
+- [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) - Pure C++ inference engine (4GB VRAM!)
 
--   **CFG Augmentation (CA)**: The primary **engine** 🚀 driving the distillation process, a factor largely overlooked in previous work.
--   **Distribution Matching (DM)**: Acts more as a **regularizer** ⚖️, ensuring the stability and quality of the generated output.
+---
 
-By recognizing and decoupling these two mechanisms, we were able to study and optimize them in isolation. This ultimately motivated us to develop an improved distillation process that significantly enhances the performance of few-step generation.
+## 🏗️ Tech Stack
 
-![Diagram of Decoupled-DMD](assets/decoupled-dmd.webp)
+### Desktop App
+- **Tauri** - Lightweight native app framework (Rust)
+- **React** - UI framework
+- **Python** - ML inference backend
+- **PyTorch** - ML framework
+- **FastAPI** - Backend API
 
-## 🤖 DMDR: Fusing DMD with Reinforcement Learning
+### Web App
+- **React** - Frontend framework
+- **Vite** - Build tool
+- **FastAPI** - Backend API
+- **Diffusers** - Hugging Face pipelines
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.13649-b31b1b.svg)](https://arxiv.org/abs/2511.13649)
+### Landing Page
+- **React** - UI framework
+- **Vite** - Build tool
+- **Netlify** - Deployment
 
-Building upon the strong foundation of Decoupled-DMD, our 8-step Z-Image model has already demonstrated exceptional capabilities. To achieve further improvements in terms of semantic alignment, aesthetic quality, and structural coherence—while producing images with richer high-frequency details—we present **DMDR**.
+---
 
-Our core insight behind DMDR is that Reinforcement Learning (RL) and Distribution Matching Distillation (DMD) can be synergistically integrated during the post-training of few-step models. We demonstrate that:
+## 📋 System Requirements
 
--   **RL Unlocks the Performance of DMD** 🚀
--   **DMD Effectively Regularizes RL** ⚖️
+### Recommended
+- **macOS 10.13+** (Windows/Linux support for desktop app coming)
+- **16GB+ RAM** (unified memory on Apple Silicon)
+- **Apple Silicon (M1/M2/M3)** or **NVIDIA GPU**
+- **20GB free disk space**
+- **Python 3.10+**
 
-![Diagram of DMDR](assets/DMDR.webp)
+### Minimum
+- **8GB RAM** (slower, ~5-10s per image)
+- **CPU only** (no GPU required but much slower)
 
-## 🎉 Community Works
+---
 
-- [Cache-DiT](https://github.com/vipshop/cache-dit) offers inference acceleration support for Z-Image with DBCache, Context Parallelism and Tensor Parallelism. Visit their [example](https://github.com/vipshop/cache-dit/blob/main/examples/parallelism/run_zimage_cp.py) for more details.
-- [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) is a pure C++ diffusion model inference engine that supports fast and memory-efficient Z-Image inference across multiple platforms (CUDA, Vulkan, etc.). You can use stable-diffusion.cpp to generate images with Z-Image on machines with as little as 4GB of VRAM. For more information, please refer to [How to Use Z‐Image on a GPU with Only 4GB VRAM](https://github.com/leejet/stable-diffusion.cpp/wiki/How-to-Use-Z%E2%80%90Image-on-a-GPU-with-Only-4GB-VRAM)
+## 🤝 Contributing
 
+Contributions welcome! Please:
 
-## 📜 Citation
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-If you find our work useful in your research, please consider citing:
+---
 
-```bibtex
-@misc{z-image-2025,
-  title={Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer},
-  author={Tongyi Lab},
-  year={2025},
-  publisher={GitHub},
-  journal={GitHub repository},
-  howpublished={\url{https://github.com/Tongyi-MAI/Z-Image}}
-}
-```
-## 🚀 Star History
+## 📜 License
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Tongyi-MAI/Z-Image&type=date&legend=top-left)](https://www.star-history.com/#Tongyi-MAI/Z-Image&type=date&legend=top-left)
+This project follows the Z-Image repository license.
 
-## 🤝 We're Hiring!
+---
 
-We're actively looking for **Research Scientists**, **Engineers**, and **Interns** to work on foundational generative models and their applications. Interested candidates please send your resume to: **jingpeng.gp@alibaba-inc.com**
+## 🙏 Credits
+
+- **Z-Image-Turbo** by [Tongyi-MAI](https://github.com/Tongyi-MAI)
+- **Diffusers** by Hugging Face
+- **Tauri** for the desktop framework
+- **FastAPI** by Sebastián Ramírez
+- **React** by Meta
+- All contributors to this project
+
+---
+
+## 🆘 Support
+
+- [Desktop App Issues](./desktop-app/README.md#-troubleshooting)
+- [Web App Deployment Help](./web-app/DEPLOYMENT.md)
+- [GitHub Issues](https://github.com/beausterling/z-fast/issues)
+- [Original Z-Image Site](https://tongyi-mai.github.io/Z-Image-blog/)
+
+---
+
+<div align="center">
+
+**Built for speed. Designed for privacy. Made with love.**
+
+⚡🔒❤️
+
+[![Star History](https://api.star-history.com/svg?repos=beausterling/z-fast&type=date)](https://star-history.com/#beausterling/z-fast&Date)
+
+</div>
