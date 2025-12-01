@@ -157,7 +157,55 @@ Check API health status.
 - **Default Steps**: 9 (optimal for Turbo model)
 - **API URL**: Configured in `vite.config.js` proxy
 
-## 📦 Production Build
+## 🚀 Production Deployment
+
+### Quick Deploy to Netlify (Frontend)
+
+**Easiest method** - Deploy via Netlify UI:
+
+1. Push code to GitHub ✅
+2. Go to https://app.netlify.com
+3. "Add new site" → "Import an existing project"
+4. Configure:
+   - Base directory: `web-app/frontend`
+   - Build command: `npm run build`
+   - Publish directory: `web-app/frontend/dist`
+5. Deploy!
+
+**Or use the automated script**:
+
+```bash
+cd web-app
+./deploy-to-netlify.sh
+```
+
+### Backend Deployment
+
+The backend requires **GPU hosting**. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed options:
+
+**Recommended**: Hugging Face Spaces (Free T4 GPU)
+- Deploy in minutes
+- Free tier available
+- Easy setup
+
+**Other options**:
+- Replicate (pay-per-use, $0.005/image)
+- Modal (serverless GPU)
+- RunPod (cheap dedicated GPU, $0.20/hr)
+- Railway (easy but pricier)
+- Self-hosted (your own GPU)
+
+📖 **Full deployment guide**: [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Environment Variables
+
+After deploying backend, update frontend:
+
+1. Netlify Dashboard → Site settings → Environment variables
+2. Add: `VITE_API_URL` = your backend URL
+3. Redeploy
+
+## 📦 Manual Production Build
 
 ### Frontend
 

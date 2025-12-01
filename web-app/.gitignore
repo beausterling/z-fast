@@ -36,6 +36,7 @@ Thumbs.db
 # Environment
 .env
 .env.local
+.env*.local
 
 # Model cache
 models/
